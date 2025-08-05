@@ -15,11 +15,11 @@ const About = () => {
             <div>
               <div className="w-20 h-1 bg-gradient-accent mb-6 animate-scale-in"></div>
               <h2 className="text-4xl lg:text-5xl font-light text-architect-charcoal mb-6 animate-fade-in-up">
-                About <span className="font-semibold">Architect Sunil</span>
+                About <span className="font-semibold">Ar. Sunil</span>
               </h2>
               <div className="space-y-6 text-lg text-architect-concrete leading-relaxed">
                 <p className="animate-fade-in-delay-200">
-                  With over 15 years of experience in architectural design, I specialize in creating 
+                  With over 10 years of experience in architectural design, I specialize in creating 
                   innovative and sustainable spaces that seamlessly blend aesthetic appeal with 
                   functional excellence.
                 </p>

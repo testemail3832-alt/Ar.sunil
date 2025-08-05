@@ -1,14 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Mail, ArrowDown, MessageCircle } from "lucide-react";
-import architectPortrait from "@/assets/architect-portrait.jpg";
+// import architectPortrait from "@/assets/architect-portrait.jpg";
+import architectPortrait from "@/assets/WhatsApp Image 2025-08-05 at 10.01.09 PM.jpeg";
 
 const Hero = () => {
   const scrollToProjects = () => {
-    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden"
+    >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-20 w-96 h-96 border border-white/20 rotate-45"></div>
@@ -20,13 +24,16 @@ const Hero = () => {
         <div className="text-white space-y-8">
           <div className="space-y-4">
             <div className="w-20 h-1 bg-gradient-accent animate-slide-in-left"></div>
-            <h1 className="text-5xl lg:text-7xl font-light tracking-tight animate-fade-in-delay-100">
-              Architect
-              <span className="block font-semibold text-architect-gold animate-fade-in-delay-200">Sunil</span>
+            <h1 className="text-5xl lg:text-7xl font-light tracking-tight animate-fade-in-delay-100 flex gap-3">
+              Ar.
+              <span className="block font-semibold text-architect-gold animate-fade-in-delay-200">
+                Sunil
+              </span>
             </h1>
             <p className="text-xl lg:text-2xl text-white/80 font-light leading-relaxed animate-fade-in-delay-300">
-              Creating innovative spaces that blend form, function, and sustainability. 
-              Transforming visions into architectural masterpieces.
+              Creating innovative spaces that blend form, function, and
+              sustainability. Transforming visions into architectural
+              masterpieces.
             </p>
           </div>
 
@@ -37,8 +44,8 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-architect-gold text-architect-charcoal hover:bg-architect-gold/90 font-medium px-8 py-3 transition-all duration-300 hover:shadow-glow hover:scale-105"
               >
                 <Mail className="mr-2 h-5 w-5" />
@@ -52,8 +59,8 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 size="lg"
                 className="border-white/30 text-black hover:bg-white/10 font-medium px-8 py-3 hover:scale-105 transition-all duration-300"
               >
@@ -70,7 +77,7 @@ const Hero = () => {
             <img
               src={architectPortrait}
               alt="Architect Sunil"
-              className="w-full max-w-md mx-auto rounded-lg shadow-elegant hover:shadow-glow transition-all duration-500"
+              className="w-full max-w-md max-h-[500px] mx-auto rounded-lg shadow-elegant hover:shadow-glow transition-all duration-500"
             />
           </div>
           <div className="absolute top-4 left-4 w-full h-full border-2 border-architect-gold/30 rounded-lg -z-10 animate-scale-in"></div>
@@ -78,7 +85,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <button 
+      <button
         onClick={scrollToProjects}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/60 hover:text-white transition-colors"
       >

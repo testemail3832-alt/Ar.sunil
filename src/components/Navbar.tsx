@@ -46,7 +46,7 @@ const Navbar = () => {
             <h1 className={`text-2xl font-light transition-all duration-300 ${
               isScrolled ? 'text-architect-charcoal' : 'text-white'
             }`}>
-              Architect <span className="font-semibold text-architect-gold">Sunil</span>
+              Ar. <span className="font-semibold text-architect-gold">Sunil</span>
             </h1>
           </div>
 

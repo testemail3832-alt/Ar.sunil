@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Calendar, MapPin } from "lucide-react";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
+import project1 from "@/assets/projects/WhatsApp Image 2025-08-05 at 10.09.38 PM.jpeg";
+import project2 from "@/assets/projects/WhatsApp Image 2025-08-05 at 10.09.40 PM (1).jpeg";
+import project3 from "@/assets/projects/WhatsApp Image 2025-08-05 at 10.09.41 PM.jpeg";
+import { toast } from "react-toastify";
 
 const Projects = () => {
   const projects = [
@@ -11,7 +12,7 @@ const Projects = () => {
       title: "Modern Luxury Residence",
       category: "Residential",
       year: "2023",
-      location: "Mumbai, India",
+      location: "Mohali, India",
       description: "A contemporary family home featuring clean lines, sustainable materials, and seamless indoor-outdoor living.",
       image: project1,
       featured: true
@@ -21,7 +22,7 @@ const Projects = () => {
       title: "Sustainable Office Complex",
       category: "Commercial",
       year: "2023",
-      location: "Bangalore, India", 
+      location: "Mohali, India", 
       description: "An eco-friendly office building with innovative green technologies and modern workspaces.",
       image: project2,
       featured: true
@@ -31,12 +32,16 @@ const Projects = () => {
       title: "Cultural Arts Center",
       category: "Public",
       year: "2022",
-      location: "Delhi, India",
+      location: "Mohali, India",
       description: "A dynamic cultural hub with flowing architectural forms that celebrate creativity and community.",
       image: project3,
       featured: true
     }
   ];
+
+  const handleView =()=>{
+    toast.warning("Under Development");
+  }
 
   return (
     <section id="projects" className="py-20 bg-background">
@@ -112,6 +117,7 @@ const Projects = () => {
           <Button 
             size="lg"
             className="bg-architect-charcoal text-white hover:bg-architect-charcoal/90 px-8 py-3"
+            onClick={handleView}
           >
             View All Projects
           </Button>

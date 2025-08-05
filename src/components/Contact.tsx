@@ -20,7 +20,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Office",
-      value: "Mumbai, Maharashtra, India",
+      value: "2761, Basement Floor Aerocity Block-c, Mohali.",
       link: "#"
     },
     {
@@ -160,7 +160,7 @@ const Contact = () => {
               <ul className="space-y-3 text-architect-concrete">
                 <li className="flex items-center space-x-3 animate-fade-in-delay-900 hover:scale-105 transition-transform duration-300">
                   <div className="w-2 h-2 bg-architect-gold rounded-full animate-scale-in"></div>
-                  <span>15+ years of proven experience</span>
+                  <span>10+ years of proven experience</span>
                 </li>
                 <li className="flex items-center space-x-3 animate-fade-in-delay-1000 hover:scale-105 transition-transform duration-300">
                   <div className="w-2 h-2 bg-architect-gold rounded-full animate-scale-in"></div>
